@@ -56,4 +56,9 @@ public class MovieController {
         } else { response = "Movie hasnt updated";
             return new ResponseEntity<>(response,HttpStatus.OK);}
     }
+
+    @GetMapping("/{id}")
+    ResponseEntity <Optional<Movie>> findById(@PathVariable Long id){
+        return ResponseEntity.ok().body(movieService.findById(id));
+    }
 }
