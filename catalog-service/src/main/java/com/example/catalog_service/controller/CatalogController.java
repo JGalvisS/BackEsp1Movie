@@ -13,12 +13,12 @@ public class CatalogController {
     @Autowired
     private IMovieClient iMovieClient;
 
-    @GetMapping("/catalog/{genre}")
+    @GetMapping("catalog/{genre}")
     public ResponseEntity <List<Movie>> getCatalogByGenre (@PathVariable String genre){
         return  iMovieClient.getMovieByGenre(genre);
     }
 
-    @PostMapping("/catalog/moviesave")
+    @PostMapping("catalog/moviesave")
     public ResponseEntity <Movie> seveMovie(@RequestBody Movie movie){
         return iMovieClient.saveMovie(movie);
     }
