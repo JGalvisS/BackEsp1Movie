@@ -1,0 +1,483 @@
+{
+	"info": {
+		"_postman_id": "4cfd2d9b-f4ea-4a3b-aeeb-bf24832b19e0",
+		"name": "parcial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34650145"
+	},
+	"item": [
+		{
+			"name": "movie",
+			"item": [
+				{
+					"name": "movie id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:59117/api/v1/movies/8"
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:59117/api/v1/movies/8"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 May 2025 19:34:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 8,\n    \"name\": \"ElCicloDelEmperador\",\n    \"genre\": \"Fantasia\",\n    \"urlStream\": \"1234 Elm Street\"\n}"
+						}
+					]
+				},
+				{
+					"name": "movie",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 5,\r\n    \"name\": \"PeliModificada\",\r\n    \"genre\": \"Fantasia\",\r\n    \"urlStream\": \"1234 Elm Street\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:59117/api/v1/movies/update"
+					},
+					"response": [
+						{
+							"name": "movie",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 8,\r\n    \"name\": \"ElCicloDelEmperador\",\r\n    \"genre\": \"Fantasia\",\r\n    \"urlStream\": \"1234 Elm Street\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:59117/api/v1/movies/update"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 May 2025 19:27:34 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "ID Movie8 has been updated successful"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:59117/api/v1/movies/6"
+					},
+					"response": [
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:59117/api/v1/movies/8"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "25"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 May 2025 19:34:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "La pelicula fue eliminada"
+						}
+					]
+				},
+				{
+					"name": "movie name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:59117/api/v1/movies/name/Rio"
+					},
+					"response": [
+						{
+							"name": "movie name",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:59117/api/v1/movies/name/Rio"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 28 Apr 2025 16:22:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 7,\n    \"name\": \"Rio\",\n    \"genre\": \"Fantasia\",\n    \"urlStream\": \"1234 Elm Street\"\n}"
+						}
+					]
+				},
+				{
+					"name": "movie",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:59117/api/v1/movies/genre/Terror"
+					},
+					"response": [
+						{
+							"name": "movie",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:59117/api/v1/movies/genre/Terror"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 28 Apr 2025 16:20:59 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Pelicula 1\",\n        \"genre\": \"Terror\",\n        \"urlStream\": \"www.netflix.com\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Pelicula 2\",\n        \"genre\": \"Terror\",\n        \"urlStream\": \"www.netflix.com\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "movie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ElEmperador\",\r\n    \"genre\": \"Fantasia\",\r\n    \"urlStream\": \"1234 Elm Street\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:59117/api/v1/movies/save"
+					},
+					"response": [
+						{
+							"name": "post answer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Peli\",\r\n    \"genre\": \"Fantasia\",\r\n    \"urlStream\": \"1234 Elm Street\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:57104/api/v1/movies/save"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 28 Apr 2025 05:13:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"name\": \"Peli\",\n    \"genre\": \"Fantasia\",\n    \"urlStream\": \"1234 Elm Street\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "catalog",
+			"item": [
+				{
+					"name": "catalogfeing",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:57094/catalog/Terror"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "connection",
+									"value": "keep-alive, keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 10 May 2025 18:57:18 GMT"
+								},
+								{
+									"key": "keep-alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Pelicula 1\",\n        \"genre\": \"Terror\",\n        \"urlStram\": null\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Pelicula 2\",\n        \"genre\": \"Terror\",\n        \"urlStram\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "catalogfeing",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ElEmperador\",\r\n    \"genre\": \"Accion\",\r\n    \"urlStream\": \"1234 Elm Street\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:57094/catalog/moviesave"
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"ElEmperador\",\r\n    \"genre\": \"Accion\",\r\n    \"urlStream\": \"1234 Elm Street\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:57094/catalog/moviesave"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "connection",
+									"value": "keep-alive, keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 10 May 2025 19:00:41 GMT"
+								},
+								{
+									"key": "keep-alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 9,\n    \"name\": \"ElEmperador\",\n    \"genre\": \"Accion\",\n    \"urlStram\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "gateway",
+			"item": [
+				{
+					"name": "gateway",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/catalog/Ficcion"
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8080/catalog/Ficcion"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 12 May 2025 00:24:26 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 4,\n        \"name\": \"Pelicula 4\",\n        \"genre\": \"Ficcion\",\n        \"urlStram\": null\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}
