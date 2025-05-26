@@ -31,4 +31,4 @@ build/
 
 ### VS Code ###
 .vscode/
-gateway/src/main/resources/application.yml git
+gateway/src/main/resources/application.yml
