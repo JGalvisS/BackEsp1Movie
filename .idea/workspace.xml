@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0aec3fa-247d-4db1-96b9-294289d99646" name="Changes" comment="" />
+    <list default="true" id="f0aec3fa-247d-4db1-96b9-294289d99646" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog_service/controller/CatalogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog_service/controller/CatalogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog_service/service/CatalogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog_service/service/CatalogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs" beforeDir="false" afterPath="$PROJECT_DIR$/configs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/catalog-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/catalog-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +25,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/configs" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -114,10 +121,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MovieServiceApplication" />
         <item itemvalue="Application.CatalogServiceApplication" />
         <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Application.EurekaServerApplication" />
-        <item itemvalue="Application.MovieServiceApplication" />
         <item itemvalue="Application.ConfigServerApplication" />
       </list>
     </recent_temporary>
