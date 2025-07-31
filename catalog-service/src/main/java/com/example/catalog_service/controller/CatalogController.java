@@ -6,8 +6,6 @@ import io.github.resilience4j.retry.annotation.Retry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -22,7 +20,7 @@ public class CatalogController {
     }
 
     @PostMapping("catalog/moviesave")
-    public ResponseEntity <Movie> postSeveMovie(@RequestBody Movie movie){
+    public ResponseEntity <Movie> postSaveMovie(@RequestBody Movie movie){
         return ResponseEntity.ok(catalogService.saveMovieService(movie));
     }
 }
